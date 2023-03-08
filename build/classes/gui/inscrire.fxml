@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.inscrireController">
+   <children>
+      <TextField fx:id="nom_field" layoutX="132.0" layoutY="38.0" prefHeight="31.0" prefWidth="119.0" />
+      <Button fx:id="button_ajouter" layoutX="369.0" layoutY="245.0" mnemonicParsing="false" onAction="#ajouter_personne" text="ajouter" />
+      <Text layoutX="46.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nom" />
+      <Text layoutX="35.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prenom" />
+      <TextField fx:id="prenom_field" layoutX="132.0" layoutY="69.0" prefHeight="31.0" prefWidth="119.0" />
+      <TextField fx:id="num_field" layoutX="132.0" layoutY="100.0" prefHeight="31.0" prefWidth="119.0" />
+      <TextField fx:id="adresse_field" layoutX="132.0" layoutY="128.0" prefHeight="31.0" prefWidth="119.0" />
+      <Text layoutX="31.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numero  " />
+      <Text layoutX="36.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="adresse" />
+      <Text layoutX="17.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mot de passe" />
+      <VBox fx:id="bf" layoutX="17.0" layoutY="222.0" prefHeight="93.0" prefWidth="100.0">
+         <children>
+            <Label text="proffesion" />
+            <Label text="description" />
+         </children></VBox>
+      <Button layoutX="362.0" layoutY="299.0" mnemonicParsing="false" onAction="#freelance" text="freelance" />
+      <Button fx:id="sortir" layoutX="381.0" layoutY="350.0" mnemonicParsing="false" onAction="#sortir" text="exit" />
+      <VBox fx:id="ab" layoutX="132.0" layoutY="214.0" prefHeight="81.0" prefWidth="119.0">
+         <children>
+            <ChoiceBox fx:id="prof" prefWidth="150.0" />
+            <TextField fx:id="description_field" />
+         </children>
+      </VBox>
+      <PasswordField fx:id="mdp_field" layoutX="132.0" layoutY="152.0" prefHeight="31.0" prefWidth="119.0" />
+      <PasswordField fx:id="confirm" layoutX="132.0" layoutY="183.0" prefHeight="31.0" prefWidth="119.0" />
+      <Text layoutX="20.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="confimer mdp" />
+   </children>
+</AnchorPane>
